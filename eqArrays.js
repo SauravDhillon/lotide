@@ -21,10 +21,9 @@ if(arr1.length !== arr2.length){
 for(let i = 0; i < arr1.length; i++){
     if(arr1[i] !== arr2[i]){
       return false;
-    }else{
-      return true;
     }
 }
+return true;
 };
 console.log(eqArrays([1,2,3], [1,2,3])); // returns true
 console.log(assertEqual(eqArrays([1,2,3], [1,2,3]), true));
