@@ -26,13 +26,15 @@ const letterPositions = function(sentence){
  for(let i = 0; i < sentence.length; i++){
   const character = sentence[i];
    // console.log(sentence[i]);
-  if(results[character]){
+  if(character !== " "){
+    if(results[character]){
       results[character].push(i);
  }else{
   results[character] = [i];
  } 
+}
   
- }
+}
  return results;
 };
 console.log(letterPositions("hello"));

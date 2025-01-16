@@ -28,8 +28,7 @@ const eqObjects = function(obj1, obj2){
 // that same key in other object
   const keys1 = Object.keys(obj1);
   const keys2 = Object.keys(obj2);
-  //const value1 = Object.values(obj1);
-  //const value2 = Object.values(obj2);
+ 
   if(keys1.length !== keys2.length){
     return false;
   }
